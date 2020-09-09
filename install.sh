@@ -30,7 +30,7 @@ fi
 
 # By popular demand, do softer checking for other OS versions
 if uname -a | fgrep -ivq arm; then
-    run_on_pi_only
+    
 fi
 
 # Add public key to apt
