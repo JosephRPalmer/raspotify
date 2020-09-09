@@ -28,10 +28,6 @@ if [ "$PREREQ_PACKAGES_TO_INSTALL" ]; then
     sudo apt-get -y install $PREREQ_PACKAGES_TO_INSTALL
 fi
 
-# By popular demand, do softer checking for other OS versions
-if uname -a | fgrep -ivq arm; then
-    
-fi
 
 # Add public key to apt
 curl -sSL https://dtcooper.github.io/raspotify/key.asc | sudo apt-key add -v -
